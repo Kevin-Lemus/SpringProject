@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title th:text="${title}"></title>
+    <title th:text="${userDto.title}">Document</title>
 </head>
 <body>
-    <h1 th:text="${nombre}">Esta es la vista del controlador Home</h1>
-    <h3 th:text="${profesion}"></h3>
+    <h1>Nombre de usuario:</h1>
+    <ul>
+        <li th:text="${userDto.user.name}"></li>
+        <li th:text="${userDto.user.lastname}"></li>
+    </ul>
 </body>
 </html>
